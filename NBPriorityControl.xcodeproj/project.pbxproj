@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B04F22C19069224009C092F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B04F22B19069224009C092F /* Cocoa.framework */; };
+		8B04F23619069224009C092F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B04F23419069224009C092F /* InfoPlist.strings */; };
+		8B04F23819069224009C092F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B04F23719069224009C092F /* main.m */; };
+		8B04F23C19069224009C092F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8B04F23A19069224009C092F /* Credits.rtf */; };
+		8B04F23F19069224009C092F /* NBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B04F23E19069224009C092F /* NBAppDelegate.m */; };
+		8B04F24219069224009C092F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B04F24019069224009C092F /* MainMenu.xib */; };
+		8B04F24419069224009C092F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B04F24319069224009C092F /* Images.xcassets */; };
+		8B04F24B19069224009C092F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B04F24A19069224009C092F /* XCTest.framework */; };
+		8B04F24C19069224009C092F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B04F22B19069224009C092F /* Cocoa.framework */; };
+		8B04F25419069224009C092F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B04F25219069224009C092F /* InfoPlist.strings */; };
+		8B04F25619069224009C092F /* NBPriorityControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B04F25519069224009C092F /* NBPriorityControlTests.m */; };
+		8B04F2611906C8C2009C092F /* NBPriorityControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B04F2601906C8C2009C092F /* NBPriorityControl.m */; };
+		8B04F27A190900AB009C092F /* ToDo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B04F278190900AB009C092F /* ToDo.png */; };
+		8B04F27B190900AB009C092F /* ToDo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B04F279190900AB009C092F /* ToDo@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B04F24D19069224009C092F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B04F22019069224009C092F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B04F22719069224009C092F;
+			remoteInfo = NBPriorityControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B04F22819069224009C092F /* NBPriorityControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NBPriorityControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B04F22B19069224009C092F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8B04F22E19069224009C092F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8B04F22F19069224009C092F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8B04F23019069224009C092F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8B04F23319069224009C092F /* NBPriorityControl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NBPriorityControl-Info.plist"; sourceTree = "<group>"; };
+		8B04F23519069224009C092F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B04F23719069224009C092F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8B04F23919069224009C092F /* NBPriorityControl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NBPriorityControl-Prefix.pch"; sourceTree = "<group>"; };
+		8B04F23B19069224009C092F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		8B04F23D19069224009C092F /* NBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NBAppDelegate.h; sourceTree = "<group>"; };
+		8B04F23E19069224009C092F /* NBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBAppDelegate.m; sourceTree = "<group>"; };
+		8B04F24119069224009C092F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8B04F24319069224009C092F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8B04F24919069224009C092F /* NBPriorityControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBPriorityControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B04F24A19069224009C092F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8B04F25119069224009C092F /* NBPriorityControlTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NBPriorityControlTests-Info.plist"; sourceTree = "<group>"; };
+		8B04F25319069224009C092F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8B04F25519069224009C092F /* NBPriorityControlTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBPriorityControlTests.m; sourceTree = "<group>"; };
+		8B04F25F1906C8C2009C092F /* NBPriorityControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NBPriorityControl.h; sourceTree = "<group>"; };
+		8B04F2601906C8C2009C092F /* NBPriorityControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NBPriorityControl.m; sourceTree = "<group>"; };
+		8B04F278190900AB009C092F /* ToDo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ToDo.png; sourceTree = "<group>"; };
+		8B04F279190900AB009C092F /* ToDo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ToDo@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B04F22519069224009C092F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B04F22C19069224009C092F /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B04F24619069224009C092F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B04F24C19069224009C092F /* Cocoa.framework in Frameworks */,
+				8B04F24B19069224009C092F /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B04F21F19069224009C092F = {
+			isa = PBXGroup;
+			children = (
+				8B04F23119069224009C092F /* NBPriorityControl */,
+				8B04F24F19069224009C092F /* NBPriorityControlTests */,
+				8B04F22A19069224009C092F /* Frameworks */,
+				8B04F22919069224009C092F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B04F22919069224009C092F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B04F22819069224009C092F /* NBPriorityControl.app */,
+				8B04F24919069224009C092F /* NBPriorityControlTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B04F22A19069224009C092F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B04F22B19069224009C092F /* Cocoa.framework */,
+				8B04F24A19069224009C092F /* XCTest.framework */,
+				8B04F22D19069224009C092F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B04F22D19069224009C092F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B04F22E19069224009C092F /* AppKit.framework */,
+				8B04F22F19069224009C092F /* CoreData.framework */,
+				8B04F23019069224009C092F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		8B04F23119069224009C092F /* NBPriorityControl */ = {
+			isa = PBXGroup;
+			children = (
+				8B04F23D19069224009C092F /* NBAppDelegate.h */,
+				8B04F23E19069224009C092F /* NBAppDelegate.m */,
+				8B04F24019069224009C092F /* MainMenu.xib */,
+				8B04F24319069224009C092F /* Images.xcassets */,
+				8B04F23219069224009C092F /* Supporting Files */,
+				8B04F25F1906C8C2009C092F /* NBPriorityControl.h */,
+				8B04F2601906C8C2009C092F /* NBPriorityControl.m */,
+				8B04F2621906C92C009C092F /* Images */,
+			);
+			path = NBPriorityControl;
+			sourceTree = "<group>";
+		};
+		8B04F23219069224009C092F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B04F23319069224009C092F /* NBPriorityControl-Info.plist */,
+				8B04F23419069224009C092F /* InfoPlist.strings */,
+				8B04F23719069224009C092F /* main.m */,
+				8B04F23919069224009C092F /* NBPriorityControl-Prefix.pch */,
+				8B04F23A19069224009C092F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B04F24F19069224009C092F /* NBPriorityControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B04F25519069224009C092F /* NBPriorityControlTests.m */,
+				8B04F25019069224009C092F /* Supporting Files */,
+			);
+			path = NBPriorityControlTests;
+			sourceTree = "<group>";
+		};
+		8B04F25019069224009C092F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B04F25119069224009C092F /* NBPriorityControlTests-Info.plist */,
+				8B04F25219069224009C092F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B04F2621906C92C009C092F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8B04F278190900AB009C092F /* ToDo.png */,
+				8B04F279190900AB009C092F /* ToDo@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B04F22719069224009C092F /* NBPriorityControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B04F25919069224009C092F /* Build configuration list for PBXNativeTarget "NBPriorityControl" */;
+			buildPhases = (
+				8B04F22419069224009C092F /* Sources */,
+				8B04F22519069224009C092F /* Frameworks */,
+				8B04F22619069224009C092F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBPriorityControl;
+			productName = NBPriorityControl;
+			productReference = 8B04F22819069224009C092F /* NBPriorityControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B04F24819069224009C092F /* NBPriorityControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B04F25C19069224009C092F /* Build configuration list for PBXNativeTarget "NBPriorityControlTests" */;
+			buildPhases = (
+				8B04F24519069224009C092F /* Sources */,
+				8B04F24619069224009C092F /* Frameworks */,
+				8B04F24719069224009C092F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B04F24E19069224009C092F /* PBXTargetDependency */,
+			);
+			name = NBPriorityControlTests;
+			productName = NBPriorityControlTests;
+			productReference = 8B04F24919069224009C092F /* NBPriorityControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B04F22019069224009C092F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = boitard;
+				TargetAttributes = {
+					8B04F24819069224009C092F = {
+						TestTargetID = 8B04F22719069224009C092F;
+					};
+				};
+			};
+			buildConfigurationList = 8B04F22319069224009C092F /* Build configuration list for PBXProject "NBPriorityControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B04F21F19069224009C092F;
+			productRefGroup = 8B04F22919069224009C092F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B04F22719069224009C092F /* NBPriorityControl */,
+				8B04F24819069224009C092F /* NBPriorityControlTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B04F22619069224009C092F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B04F23619069224009C092F /* InfoPlist.strings in Resources */,
+				8B04F24419069224009C092F /* Images.xcassets in Resources */,
+				8B04F27A190900AB009C092F /* ToDo.png in Resources */,
+				8B04F23C19069224009C092F /* Credits.rtf in Resources */,
+				8B04F27B190900AB009C092F /* ToDo@2x.png in Resources */,
+				8B04F24219069224009C092F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B04F24719069224009C092F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B04F25419069224009C092F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B04F22419069224009C092F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B04F23F19069224009C092F /* NBAppDelegate.m in Sources */,
+				8B04F2611906C8C2009C092F /* NBPriorityControl.m in Sources */,
+				8B04F23819069224009C092F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B04F24519069224009C092F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B04F25619069224009C092F /* NBPriorityControlTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B04F24E19069224009C092F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B04F22719069224009C092F /* NBPriorityControl */;
+			targetProxy = 8B04F24D19069224009C092F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B04F23419069224009C092F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B04F23519069224009C092F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8B04F23A19069224009C092F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B04F23B19069224009C092F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		8B04F24019069224009C092F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B04F24119069224009C092F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		8B04F25219069224009C092F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B04F25319069224009C092F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B04F25719069224009C092F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8B04F25819069224009C092F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8B04F25A19069224009C092F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NBPriorityControl/NBPriorityControl-Prefix.pch";
+				INFOPLIST_FILE = "NBPriorityControl/NBPriorityControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8B04F25B19069224009C092F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NBPriorityControl/NBPriorityControl-Prefix.pch";
+				INFOPLIST_FILE = "NBPriorityControl/NBPriorityControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8B04F25D19069224009C092F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NBPriorityControl.app/Contents/MacOS/NBPriorityControl";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NBPriorityControl/NBPriorityControl-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NBPriorityControlTests/NBPriorityControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8B04F25E19069224009C092F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NBPriorityControl.app/Contents/MacOS/NBPriorityControl";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NBPriorityControl/NBPriorityControl-Prefix.pch";
+				INFOPLIST_FILE = "NBPriorityControlTests/NBPriorityControlTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B04F22319069224009C092F /* Build configuration list for PBXProject "NBPriorityControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B04F25719069224009C092F /* Debug */,
+				8B04F25819069224009C092F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B04F25919069224009C092F /* Build configuration list for PBXNativeTarget "NBPriorityControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B04F25A19069224009C092F /* Debug */,
+				8B04F25B19069224009C092F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8B04F25C19069224009C092F /* Build configuration list for PBXNativeTarget "NBPriorityControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B04F25D19069224009C092F /* Debug */,
+				8B04F25E19069224009C092F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B04F22019069224009C092F /* Project object */;
+}
