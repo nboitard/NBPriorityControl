@@ -23,6 +23,7 @@
 #import "NBPriorityControl.h"
 #import <QuartzCore/QuartzCore.h>
 
+static const CGFloat layerShrinkRatio = 0.25;
 
 @implementation NBPriorityControl {
     
@@ -43,14 +44,11 @@
     if(self) {
         
         [self setWantsLayer:YES];
-        
-        NSLog(@"self.bounds = %@",NSStringFromRect(self.bounds));
-        
-        //self.layer.backgroundColor = [NSColor greenColor].CGColor;
     
         _backgroundColor = [NSColor colorWithRed:0.20 green:0.596 blue:0.86 alpha:1.0];
         _icon = [NSImage imageNamed:@"ToDo"];
         _orientation = NBPriorityControlVertical;
+        _allowsShrinking = YES;
         
         if(_orientation == NBPriorityControlVertical) {
             layerWidth = frameRect.size.width;
@@ -73,7 +71,6 @@
         
         [self addTrackingArea:[[NSTrackingArea alloc]initWithRect:self.bounds options:NSTrackingMouseEnteredAndExited|NSTrackingActiveInActiveApp owner:self userInfo:nil]];
         
-        NSLog(@"NBPriorityControl initialized");
         
     }
     
@@ -110,6 +107,10 @@
     
     [self.layer addSublayer:lowLayer];
     
+    if(_allowsShrinking) {
+        [self shrinkLayers];
+    }
+    
 }
 
 -(void)updateLayers {
@@ -136,7 +137,63 @@
     lowLayer.frame = CGRectMake(0, 0, layerWidth, layerHeight);
     [lowLayer setNeedsDisplay];
     
+    if(_allowsShrinking) {
+        [self shrinkLayers];
+    }
+    
     [self setNeedsLayout:YES];
+}
+
+// expand non-selected layers when mouse hover
+-(void)expandLayers {
+    
+    CALayer *layer1, *layer2;
+    
+    if(_value==LowPriority) {
+        layer1 = midLayer;
+        layer2 = highLayer;
+    } else if(_value==NormalPriority) {
+        layer1 = lowLayer;
+        layer2 = highLayer;
+    } else {
+        layer1 = lowLayer;
+        layer2 = midLayer;
+    }
+    
+    if(_orientation==NBPriorityControlVertical) {
+        layer1.frame = CGRectMake(layer1.frame.origin.x, layer1.frame.origin.y,layerWidth,layerHeight);
+        layer2.frame = CGRectMake(layer2.frame.origin.x, layer2.frame.origin.y,layerWidth,layerHeight);
+    } else {
+        layer1.frame = CGRectMake(layer1.frame.origin.x, layer1.frame.origin.y,layerWidth,layerHeight);
+        layer2.frame = CGRectMake(layer2.frame.origin.x, layer2.frame.origin.y,layerWidth,layerHeight);
+    }
+    
+}
+
+// shrink non-selected layers when mouse exits the control
+-(void)shrinkLayers {
+    
+    CALayer *layer1, *layer2;
+    
+    if(_value==LowPriority) {
+        layer1 = midLayer;
+        layer2 = highLayer;
+    } else if(_value==NormalPriority) {
+        layer1 = lowLayer;
+        layer2 = highLayer;
+    } else {
+        layer1 = lowLayer;
+        layer2 = midLayer;
+    }
+    
+    if(_orientation==NBPriorityControlVertical) {
+        layer1.frame = CGRectMake(layer1.frame.origin.x, layer1.frame.origin.y,layerWidth*layerShrinkRatio,layerHeight);
+        layer2.frame = CGRectMake(layer2.frame.origin.x, layer2.frame.origin.y,layerWidth*layerShrinkRatio,layerHeight);
+    } else {
+        layer1.frame = CGRectMake(layer1.frame.origin.x, layer1.frame.origin.y,layerWidth,layerHeight*layerShrinkRatio);
+        layer2.frame = CGRectMake(layer2.frame.origin.x, layer2.frame.origin.y,layerWidth,layerHeight*layerShrinkRatio);
+    }
+    
 }
 
 -(void)updateIcon {
@@ -191,13 +248,16 @@
 
 -(void)mouseEntered:(NSEvent *)theEvent {
     
-    //NSLog(@"mouse entered");
-    
+    if(_allowsShrinking) {
+        [self expandLayers];
+    }
 }
 
 -(void)mouseExited:(NSEvent *)theEvent {
     
-    //NSLog(@"mouse exited");
+    if(_allowsShrinking) {
+        [self shrinkLayers];
+    }
     
 }
 

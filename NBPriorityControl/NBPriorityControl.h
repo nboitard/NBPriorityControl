@@ -60,6 +60,10 @@ typedef enum {
  */
 @property (nonatomic,assign) NBPriorityControlOrientation orientation;
 
+/**
+    Specifies if non-selected levels shrink when cursor is not in the control rect. Defaults to YES
+ */
+@property (nonatomic,assign) BOOL allowsShrinking;
 
 /**
     Contains the selector sent to the target when value changes

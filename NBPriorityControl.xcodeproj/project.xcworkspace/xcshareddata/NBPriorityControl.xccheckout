@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6588960B-81A3-442A-8E82-3DA260539797</string>
+	<key>IDESourceControlProjectName</key>
+	<string>NBPriorityControl</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BE155254-4EBB-467D-9A67-0C8E3E6CA12C</key>
+		<string>https://github.com/nboitard/NBPriorityControl.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>NBPriorityControl.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BE155254-4EBB-467D-9A67-0C8E3E6CA12C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nboitard/NBPriorityControl.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BE155254-4EBB-467D-9A67-0C8E3E6CA12C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BE155254-4EBB-467D-9A67-0C8E3E6CA12C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>NBPriorityControl</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -31,6 +31,7 @@ NBPriorityControl can be customized using some properties :
 - `backgroundColor`
 - `icon`
 - `orientation` (NBPriorityControlVertical or NBPriorityControlHorizontal)
+- `allowsShrinking`(enables MouseHover animations)
 
 ---
 ## Disclaimer
